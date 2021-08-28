@@ -1,11 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>header</title>
-</head>
+<html>
+	<head>
+		<title>
+			Create a Form Dynamically with
+			the JavaScript
+		</title>
+	</head>
+	<body style="text-align: center;">
+		<h1 style="color: green;">
+			Headline Goes Here!
+		</h1>
+		<p>
+		Click the button to create
+		a headline.
+		</p>
+		<button onClick="GFG_Fun()">
+			Start
+		</button>
+		<p id="GFG_DOWN"></p>
+<script>
+	var down = document.getElementById("GFG_DOWN");
+			
+	// Create a break line element
+	var br = document.createElement("br");
 
-<body>
+	function GFG_Fun() {
+				
 
-</body>
+	// Create a form dynamically
+	var form = document.createElement("form");
+	form.setAttribute("method", "post");
+	form.setAttribute("action", "submit.php");
+
+  ////// the 12 input elements //////
+
+	// Create an input element for 
+	var FN = document.createElement("input");
+	FN.setAttribute("type", "text");
+	FN.setAttribute("name", "FullName");
+	FN.setAttribute("placeholder", "Full Name");
+
+	// Create an input element for date of birth
+	var DOB = document.createElement("input");
+	DOB.setAttribute("type", "text");
+	DOB.setAttribute("name", "dob");
+	DOB.setAttribute("placeholder", "DOB");
+
+	// Create an input element for emailID
+	var EID = document.createElement("input");
+	EID.setAttribute("type", "text");
+	EID.setAttribute("name", "emailID");
+	EID.setAttribute("placeholder", "E-Mail ID");
+
+  	// Create an input element for Team Name
+	var TN = document.createElement("input");
+	TN.setAttribute("type", "text");
+	TN.setAttribute("team", "TeamName");
+	TN.setAttribute("placeholder", "Team Name");
+
+	// Create an input element for Word 5
+	var W5 = document.createElement("input");
+	W5.setAttribute("type", "text");
+	W5.setAttribute("name", "school");
+	W5.setAttribute("placeholder", "School Attended");
+
+	// Create an input element for emailID
+	var W6 = document.createElement("input");
+	W6.setAttribute("type", "text");
+	W6.setAttribute("name", "salary");
+	W6.setAttribute("placeholder", "Salary Required");
+
+  	// Create an input element for Full Name
+	var W7 = document.createElement("input");
+	W7.setAttribute("type", "text");
+	W7.setAttribute("name", "Age");
+	W7.setAttribute("placeholder", "Age Group");
+
+	// Create an input element for date of birth
+	var W8 = document.createElement("input");
+	W8.setAttribute("type", "text");
+	W8.setAttribute("name", "religion");
+	W8.setAttribute("placeholder", "religion");
+
+	// Create an input element for emailID
+	var W9 = document.createElement("input");
+	W9.setAttribute("type", "text");
+	W9.setAttribute("name", "children");
+	W9.setAttribute("placeholder", "No of Children");
+
+  // Create an input element for Full Name
+	var W10 = document.createElement("input");
+	W10.setAttribute("type", "text");
+	W10.setAttribute("name", "Drivers");
+	W10.setAttribute("placeholder", "Drivers License");
+
+	// Create an input element for date of birth
+	var W11 = document.createElement("input");
+	W11.setAttribute("type", "text");
+	W11.setAttribute("name", "pets");
+	W11.setAttribute("placeholder", "Pets Owned");
+
+	// Create an input element for emailID
+	var W12 = document.createElement("input");
+	W12.setAttribute("type", "text");
+	W12.setAttribute("name", "Guns Owned");
+	W12.setAttribute("placeholder", "Guns Owned");
+
+
+  	// Create an input element for emailID
+	var W13 = document.createElement("input");
+	W13.setAttribute("type", "text");
+  W13.setAttribute("style", "opacity:0.0");
+	W13.setAttribute("name", " ");
+	W13.setAttribute("placeholder", " ");
+
+  ////// End the 12 input elements //////////
+
+	// Create an input element for password
+	var PWD = document.createElement("input");
+	PWD.setAttribute("type", "password");
+	PWD.setAttribute("name", "password");
+	PWD.setAttribute("placeholder", "Password");
+
+	// Create an input element for retype-password
+	var RPWD = document.createElement("input");
+	RPWD.setAttribute("type", "password");
+	RPWD.setAttribute("name", "reTypePassword");
+	RPWD.setAttribute("placeholder", "ReEnter Password");
+
+
+
+				// create a submit button
+
+				var s = document.createElement("input");
+        
+				s.setAttribute("type", "submit");
+				s.setAttribute("value", "Submit");
+				
+				// Append the full name input to the form
+				form.appendChild(FN);
+				
+				// Inserting a line break
+				form.appendChild(br.cloneNode());
+				
+				// Append the DOB to the form
+				form.appendChild(DOB);
+				form.appendChild(br.cloneNode());
+				
+				// Append the emailID to the form
+				form.appendChild(EID);
+				form.appendChild(br.cloneNode());
+
+        	// Append the Team Name to the form
+				form.appendChild(TN);
+				form.appendChild(br.cloneNode());
+
+         	// Append the Team Name to the form
+				form.appendChild(W5);
+				form.appendChild(br.cloneNode());
+
+         	// Append the Team Name to the form
+				form.appendChild(W6);
+				form.appendChild(br.cloneNode());
+
+         	// Append the Team Name to the form
+				form.appendChild(W7);
+				form.appendChild(br.cloneNode());
+
+         	// Append the Team Name to the form
+				form.appendChild(W8);
+				form.appendChild(br.cloneNode());
+
+         	// Append the Team Name to the form
+				form.appendChild(W9);
+				form.appendChild(br.cloneNode());
+
+         	// Append the Team Name to the form
+				form.appendChild(W10);
+				form.appendChild(br.cloneNode());
+
+         	// Append the Team Name to the form
+				form.appendChild(W11);
+				form.appendChild(br.cloneNode());
+
+         	// Append the Team Name to the form
+				form.appendChild(W12);
+				form.appendChild(br.cloneNode());
+
+     
+				
+				// Append the Password to the form
+				form.appendChild(PWD);
+				form.appendChild(br.cloneNode());
+				
+				// Append the ReEnterPassword to the form
+				form.appendChild(RPWD);
+				form.appendChild(br.cloneNode());
+
+               	// Append the empty input box spacer
+				form.appendChild(W13);
+				form.appendChild(br.cloneNode());
+				
+				// Append the submit button to the form
+				form.appendChild(s);
+
+				document.getElementsByTagName("body")[0]
+			.appendChild(form);
+
+     // Stop it running more than once
+    document.setElementById("GFG_DOWN").hidden;
+      
+			}
+		</script>
+    
+     
+	</body>
 </html>

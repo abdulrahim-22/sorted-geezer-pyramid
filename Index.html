@@ -3,15 +3,11 @@
     <head>
         <title>Phrase-o-matic</title>
         <meta charset="utf-8">
-
-
     </head>
     <body>
         <h1>My First Web Page</h1>
         <div id="myDiv"><h2> </h2></div>
         <p id="p1">Scooby Doo!</p>
-
-
         <script>
     
             function makePhrases() {
@@ -24,7 +20,6 @@
                 var rand3 = (Math.floor(Math.random() * words3.length));
 
                 var phrase = (words1[rand1] + " " + words2[rand2] + " " + words3[rand3]);
-
             
          
                 alert(phrase);
@@ -34,9 +29,6 @@
                             {
                                 document.getElementById("myDiv").innerHTML = phrase;
                             }
-              
-    
-     
                 
             }
             makePhrases();
