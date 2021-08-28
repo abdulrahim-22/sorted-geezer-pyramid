@@ -11,10 +11,10 @@
 			Headline Goes Here!
 		</h1>
 		<p>
-		Click the button to create
+		Click the button to sign up and create
 		a headline.
 		</p>
-		<button onClick="GFG_Fun()">
+		<button id="start_btn" onClick="GFG_Fun()">
 			Start
 		</button>
 		<p id="GFG_DOWN"></p>
@@ -25,6 +25,9 @@
 	var br = document.createElement("br");
 
 	function GFG_Fun() {
+
+		// disable the start button to allow forms completion
+		start_btn.disabled="true";
 				
 
 	// Create a form dynamically
@@ -52,7 +55,7 @@
 	EID.setAttribute("name", "emailID");
 	EID.setAttribute("placeholder", "E-Mail ID");
 
-  	// Create an input element for Headline
+  	// Create an input element for Team Name
 	var TN = document.createElement("input");
 	TN.setAttribute("type", "text");
 	TN.setAttribute("team", "Headline");
